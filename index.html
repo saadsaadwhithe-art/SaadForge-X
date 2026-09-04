@@ -232,32 +232,60 @@
             line-height: 1.6;
         }
 
+        /* تنسيق قسم التسعير الجديد بالدولار */
         .pricing-section {
             padding: 80px 20px;
             background: linear-gradient(to top, #060911, var(--bg-color));
             text-align: center;
         }
 
-        .pricing-box {
-            max-width: 600px;
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
             margin: 0 auto;
+        }
+
+        .pricing-card {
             background: var(--card-bg);
-            border: 2px solid var(--accent-gold);
+            border: 1px solid var(--border-color);
             border-radius: 20px;
-            padding: 50px 30px;
-            box-shadow: 0 0 40px var(--accent-gold-glow);
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: 0.4s transform, 0.4s border-color;
+            position: relative;
         }
 
-        .pricing-box h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
+        .pricing-card.featured {
+            border: 2px solid var(--accent-gold);
+            box-shadow: 0 0 30px var(--accent-gold-glow);
+            transform: scale(1.03);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-gold);
+        }
+
+        .pricing-card h3 {
+            font-size: 22px;
             color: var(--text-main);
+            margin-bottom: 15px;
         }
 
-        .pricing-box p {
+        .price {
+            font-size: 38px;
+            font-weight: 900;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+        }
+
+        .pricing-card p {
             color: var(--text-muted);
+            font-size: 15px;
             margin-bottom: 30px;
-            font-size: 16px;
+            line-height: 1.6;
         }
 
         footer {
@@ -274,6 +302,7 @@
             nav ul { display: none; }
             .hero h1 { font-size: 30px; }
             .portfolio-section { padding: 40px 20px; }
+            .pricing-card.featured { transform: none; }
         }
     </style>
 </head>
@@ -374,11 +403,32 @@
         </div>
     </section>
 
+    <!-- قسم التسعير المحدث بالدولار -->
     <section id="pricing" class="pricing-section">
-        <div class="pricing-box">
-            <h2>صندوق التسعير وبدء العمل</h2>
-            <p>جاهز لامتلاك موقع احترافي خاص بك أو بوكالتك؟ تواصل معنا الآن لتحويل فكرتك إلى حقيقة رقمية مبهرة.</p>
-            <a href="mailto:saadsaadwhithe@gmail.com" class="btn-primary">اطلب موقعك الآن</a>
+        <h2 class="section-title">صندوق التسعير وبدء العمل</h2>
+        <div class="pricing-grid">
+            
+            <div class="pricing-card">
+                <h3>الباقة الأساسية</h3>
+                <div class="price">$10</div>
+                <p>موقع تعريفى مصغر أو صفحة هبوط شخصية بتصميم عصري وألوان متناسقة، مناسب لعرض نبذة عن أعمالك.</p>
+                <a href="mailto:saadsaadwhithe@gmail.com" class="btn-primary">اطلب موقعك الآن</a>
+            </div>
+
+            <div class="pricing-card featured">
+                <h3>الباقة الاحترافية</h3>
+                <div class="price">$25</div>
+                <p>موقع متكامل متعدد الأقسام ومعرض أعمال تفاعلي، متوافق مع كافة الأجهزة ومحسن لمحركات البحث (SEO).</p>
+                <a href="mailto:saadsaadwhithe@gmail.com" class="btn-primary">اطلب موقعك الآن</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3>باقة المتاجر والوكالات</h3>
+                <div class="price">$50</div>
+                <p>وكالة رقمية أو متجر إلكتروني متكامل لعرض وبيع المنتجات والخدمات مع دعم كامل وتنسيق مخصص فاخر.</p>
+                <a href="mailto:saadsaadwhithe@gmail.com" class="btn-primary">اطلب موقعك الآن</a>
+            </div>
+
         </div>
     </section>
 
