@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المشروع - PixelForge Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #131b2e;
+            --accent-gold: #f39c12;
+            --accent-gold-glow: rgba(243, 156, 18, 0.4);
+            --text-main: #ffffff;
+            --text-muted: #94a3b8;
+            --border-color: rgba(243, 156, 18, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(11, 15, 25, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+        .back-btn {
+            color: var(--text-main);
+            background: rgba(243, 156, 18, 0.1);
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--accent-gold);
+            color: #000;
+        }
+
+        .project-hero {
+            padding: 140px 20px 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .project-hero h1 {
+            font-size: 36px;
+            color: var(--accent-gold);
+            margin-bottom: 25px;
+        }
+
+        .project-main-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 2px solid var(--border-color);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.7), 0 0 30px var(--accent-gold-glow);
+            margin-bottom: 40px;
+        }
+
+        .project-details-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto 80px auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            text-align: right;
+        }
+
+        .project-details-card p {
+            color: var(--text-muted);
+            line-height: 1.8;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tag {
+            display: inline-block;
+            background: rgba(243, 156, 18, 0.1);
+            color: var(--accent-gold);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 14px;
+            background: #060911;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">PixelForge Studio</a>
+        <a href="index.html" class="back-btn">&#8592; العودة للرئيسية</a>
+    </header>
+
+    <div class="project-hero">
+        <h1 id="project-title">جاري تحميل تفاصيل المشروع...</h1>
+        <img id="project-img" src="" alt="Project Image" class="project-main-img">
+    </div>
+
+    <div class="project-details-card">
+        <div id="project-desc">
+            <!-- سيتم تعبئة الشروحات أوتوماتيكياً هنا -->
+        </div>
+        <div id="project-tag" class="tech-tag"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PixelForge Studio. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // قاعدة بيانات المشاريع لتغيير الصورة والشروحات حسب ID القادم من الرابط
+        const projectsData = {
+            "1": {
+                title: "متجر PetalVibe للمجوهرات الحرفية",
+                img: "Gemini_Generated_Image_uft8izuft8izuft8.jpg",
+                desc: "<strong>فكرة المشروع:</strong> تصميم واجهة متجر إلكتروني متخصصة في عرض المجوهرات المصنوعة يدوياً من الراتنج والزهور المجففة.<br><br><strong>ما تم تنفيذه:</strong> التركيز على تجربة المستخدم (UI/UX) باستخدام نمط الألوان الداكنة مع لمسات ذهبية فاخرة تبرز جمال المجوهرات، وتضمين نظام عرض تفصيلي لقطع الزينة الحرفية.",
+                tag: "HTML5 / CSS3 / Web Design"
+            },
+            "2": {
+                title: "منصة الديكورات والأخشاب الحرفية",
+                img: "Gemini_Generated_Image_bcyo31bcyo31bcyo.jpg",
+                desc: "<strong>فكرة المشروع:</strong> منصة لعرض منتجات الديكور المنزلي اليدوية والمصنوعة من الأخشاب ومكرمية الجدار.<br><br><strong>ما تم تنفيذه:</strong> هيكلة وتطوير شبكة عرض مرنة (Grid Layout) تتيح للزائر تصفح المنتجات بوضوح مع إعطاء مساحة بصرية واسعة تظهر تفاصيل الخامات والملمس الطبيعي.",
+                tag: "UI Architecture / Flexbox / Grid"
+            },
+            "3": {
+                title: "استوديو الخدمات الرقمية والتصميم",
+                img: "Gemini_Generated_Image_aox8ihaox8ihaox8.jpg",
+                desc: "<strong>فكرة المشروع:</strong> واجهة رقمية متقدمة مخصصة لتقديم خدمات التصميم الرقمي، الهويات البصرية، وبرمجة المواقع المصغرة.<br><br><strong>ما تم تنفيذه:</strong> تصميم بيئة عمل تفاعلية تعكس طابع الوكالات التقنية الحديثة، مع تنظيم الأقسام لعرض الخدمات الاحترافية وسهولة تواصل العميل.",
+                tag: "Digital Agency UI / Modern CSS"
+            },
+            "4": {
+                title: "متجر الجلود والمصنوعات الطبيعية",
+                img: "Gemini_Generated_Image_zamasfzamasfzama.jpg",
+                desc: "<strong>فكرة المشروع:</strong> متجر تجارة إلكترونية مصمم لعرض المحافظ والأحزمة والمنتجات الجلدية المصنوعة يدوياً.<br><br><strong>ما تم تنفيذه:</strong> دمج صور ماكرو دقيقة توضح تفاصيل الحياكة اليدوية الدقيقة (Saddle Stitch)، مع تصميم بطاقات عرض منتجات احترافية ومباشرة.",
+                tag: "E-Commerce UI / Macro Visuals"
+            },
+            "5": {
+                title: "معرض أعمال المصممين والمطورين",
+                img: "Gemini_Generated_Image_sm2ictsm2ictsm2i.jpg",
+                desc: "<strong>فكرة المشروع:</strong> منصة شخصية لعرض المشاريع البرمجية والتصميمية الفنية للمطورين والمبدعين.<br><br><strong>ما تم تنفيذه:</strong> بناء تصميم شبكي متجاوب (Responsive Grid) يضمن ظهور المشاريع بوضوح تام على مختلف الشاشات (حواسيب، أجهزة لوحية، وهواتف).",
+                tag: "Responsive Design / Portfolio Grid"
+            },
+            "6": {
+                title: "معرض الفنون التشكيلية واللوحات",
+                img: "Gemini_Generated_Image_kzlmlpkzlmlpkzlm.jpg",
+                desc: "<strong>فكرة المشروع:</strong> موقع فني مظلم وهادئ مخصص لعرض اللوحات الفنية والرسومات الرقمية والتكيلية.<br><br><strong>ما تم تنفيذه:</strong> استخدام خلفيات داكنة عميقة (Obsidian/Dark Mode) لكي تبرز الألوان واللوحات الفنية بشكل ساطع وجذاب يخطف انتباه الزائر فور دخول الموقع.",
+                tag: "Dark Mode Aesthetics / Art Gallery"
+            }
+        };
+
+        // قراءة رقم المشروع من الرابط (مثال: project.html?id=1)
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+
+        if (projectId && projectsData[projectId]) {
+            const project = projectsData[projectId];
+            document.getElementById('project-title').innerText = project.title;
+            document.getElementById('project-img').src = project.img;
+            document.getElementById('project-desc').innerHTML = project.desc;
+            document.getElementById('project-tag').innerText = project.tag;
+            document.title = project.title + " - PixelForge Studio";
+        } else {
+            document.getElementById('project-title').innerText = "المشروع غير موجود";
+            document.getElementById('project-desc').innerHTML = "<p>عذراً، لم يتم العثور على المشروع المطلوبة.</p>";
+        }
+    </script>
+
+</body>
+</html>
