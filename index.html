@@ -30,7 +30,6 @@
             overflow-x: hidden;
         }
 
-        /* شريط التنقل العلوي */
         header {
             display: flex;
             justify-content: space-between;
@@ -71,7 +70,6 @@
             color: var(--accent-gold);
         }
 
-        /* قسم البداية (Hero Section) */
         .hero {
             display: flex;
             flex-direction: column;
@@ -138,7 +136,6 @@
             box-shadow: 0 8px 25px rgba(243, 156, 18, 0.6);
         }
 
-        /* معرض الأعمال الاحترافية */
         .portfolio-section {
             padding: 80px 50px;
             max-width: 1300px;
@@ -223,54 +220,6 @@
             line-height: 1.6;
         }
 
-        /* قسم الشروحات وتفاصيل المشاريع (Case Studies) */
-        .case-studies-section {
-            padding: 80px 50px;
-            max-width: 1000px;
-            margin: 0 auto;
-            background: rgba(19, 27, 46, 0.4);
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .case-study-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-
-        .case-study-card h3 {
-            font-size: 24px;
-            color: var(--accent-gold);
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .case-study-card p {
-            color: var(--text-muted);
-            line-height: 1.8;
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        .tech-tag {
-            display: inline-block;
-            background: rgba(243, 156, 18, 0.1);
-            color: var(--accent-gold);
-            padding: 6px 14px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-top: 10px;
-            border: 1px solid var(--border-color);
-        }
-
-        /* صندوق التسعير */
         .pricing-section {
             padding: 80px 20px;
             background: linear-gradient(to top, #060911, var(--bg-color));
@@ -299,7 +248,6 @@
             font-size: 16px;
         }
 
-        /* تذييل الصفحة */
         footer {
             text-align: center;
             padding: 30px;
@@ -313,43 +261,39 @@
             header { padding: 15px 20px; }
             nav ul { display: none; }
             .hero h1 { font-size: 30px; }
-            .portfolio-section, .case-studies-section { padding: 40px 20px; }
+            .portfolio-section { padding: 40px 20px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- شريط التنقل -->
     <header>
-        <a href="#" class="logo">PixelForge Studio</a>
+        <a href="index.html" class="logo">PixelForge Studio</a>
         <nav>
             <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#portfolio">معرض الأعمال</a></li>
-                <li><a href="#case-studies">الشروحات</a></li>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="index.html#portfolio">معرض الأعمال</a></li>
                 <li><a href="#pricing">التسعير</a></li>
                 <li><a href="mailto:saadsaadwhithe@gmail.com">اتصل بنا</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- شاشة البداية الرئيسية -->
     <section class="hero">
         <div class="hero-mockup">
-            <img src="watermarked_img_426238228552343616.jpg" alt="PixelForge Studio Main Mockup">
+            <!-- الصورة الأساسية الصحيحة -->
+            <img src="Gemini_Generated_Image_zhf3xczhf3xczhf3.jpg" alt="PixelForge Studio Main Mockup">
         </div>
         <h1>حرفة الكود، <span>تصميم المستقبل</span></h1>
-        <p>نصمم ونطور مواقع ومتاجر إلكترونية احترافية، عصرية، ومخصصة للمبدعين وأصحاب المشاريع الحرفية والرقمية.</p>
+        <p>نصمم ونطور مواقع ومتاجر إلكترونية احترافية، عصرية، ومخصصة للمبدعين وأصحاب المشاريع الحرفية الرقمية.</p>
         <a href="#pricing" class="btn-primary">ابدأ مشروعك الآن</a>
     </section>
 
-    <!-- قسم معرض الأعمال الاحترافية -->
     <section id="portfolio" class="portfolio-section">
         <h2 class="section-title">معرض الأعمال الاحترافية</h2>
         <div class="portfolio-grid">
             
-            <!-- المشروع الأول -->
-            <a href="#project-1" class="portfolio-card">
+            <a href="project.html?id=1" class="portfolio-card">
                 <div class="card-img-container">
                     <span class="card-badge">01</span>
                     <img src="Gemini_Generated_Image_uft8izuft8izuft8.jpg" alt="PetalVibe Jewelry">
@@ -360,8 +304,7 @@
                 </div>
             </a>
 
-            <!-- المشروع الثاني -->
-            <a href="#project-2" class="portfolio-card">
+            <a href="project.html?id=2" class="portfolio-card">
                 <div class="card-img-container">
                     <span class="card-badge">02</span>
                     <img src="Gemini_Generated_Image_bcyo31bcyo31bcyo.jpg" alt="Artisan Decor">
@@ -372,8 +315,7 @@
                 </div>
             </a>
 
-            <!-- المشروع الثالث -->
-            <a href="#project-3" class="portfolio-card">
+            <a href="project.html?id=3" class="portfolio-card">
                 <div class="card-img-container">
                     <span class="card-badge">03</span>
                     <img src="Gemini_Generated_Image_aox8ihaox8ihaox8.jpg" alt="Digital Studio">
@@ -384,8 +326,7 @@
                 </div>
             </a>
 
-            <!-- المشروع الرابع -->
-            <a href="#project-4" class="portfolio-card">
+            <a href="project.html?id=4" class="portfolio-card">
                 <div class="card-img-container">
                     <span class="card-badge">04</span>
                     <img src="Gemini_Generated_Image_zamasfzamasfzama.jpg" alt="Leather Goods">
@@ -396,8 +337,7 @@
                 </div>
             </a>
 
-            <!-- المشروع الخامس -->
-            <a href="#project-5" class="portfolio-card">
+            <a href="project.html?id=5" class="portfolio-card">
                 <div class="card-img-container">
                     <span class="card-badge">05</span>
                     <img src="Gemini_Generated_Image_sm2ictsm2ictsm2i.jpg" alt="Web Agency">
@@ -408,8 +348,7 @@
                 </div>
             </a>
 
-            <!-- المشروع السادس -->
-            <a href="#project-6" class="portfolio-card">
+            <a href="project.html?id=6" class="portfolio-card">
                 <div class="card-img-container">
                     <span class="card-badge">06</span>
                     <img src="Gemini_Generated_Image_kzlmlpkzlmlpkzlm.jpg" alt="Modern Gallery">
@@ -423,55 +362,6 @@
         </div>
     </section>
 
-    <!-- قسم الشروحات وتفاصيل المشاريع (Case Studies) -->
-    <section id="case-studies" class="case-studies-section">
-        <h2 class="section-title">شروحات وتفاصيل المشاريع</h2>
-        
-        <div id="project-1" class="case-study-card">
-            <h3><span>01</span> متجر PetalVibe للمجوهرات الحرفية</h3>
-            <p><strong>فكرة المشروع:</strong> تصميم واجهة متجر إلكتروني متخصصة في عرض المجوهرات المصنوعة يدوياً من الراتنج والزهور المجففة.</p>
-            <p><strong>ما تم تنفيذه:</strong> التركيز على تجربة المستخدم (UI/UX) باستخدام نمط الألوان الداكنة مع لمسات ذهبية فاخرة تبرز جمال المجوهرات، وتضمين نظام عرض تفصيلي لقطع الزينة الحرفية.</p>
-            <span class="tech-tag">HTML5 / CSS3 / Web Design</span>
-        </div>
-
-        <div id="project-2" class="case-study-card">
-            <h3><span>02</span> منصة الديكورات والأخشاب الحرفية</h3>
-            <p><strong>فكرة المشروع:</strong> منصة لعرض منتجات الديكور المنزلي اليدوية والمصنوعة من الأخشاب ومكرمية الجدار.</p>
-            <p><strong>ما تم تنفيذه:</strong> هيكلة وتطوير شبكة عرض مرنة (Grid Layout) تتيح للزائر تصفح المنتجات بوضوح مع إعطاء مساحة بصرية واسعة تظهر تفاصيل الخامات والملمس الطبيعي.</p>
-            <span class="tech-tag">UI Architecture / Flexbox / Grid</span>
-        </div>
-
-        <div id="project-3" class="case-study-card">
-            <h3><span>03</span> استوديو الخدمات الرقمية والتصميم</h3>
-            <p><strong>فكرة المشروع:</strong> واجهة رقمية متقدمة مخصصة لتقديم خدمات التصميم الرقمي، الهويات البصرية، وبرمجة المواقع المصغرة.</p>
-            <p><strong>ما تم تنفيذه:</strong> تصميم بيئة عمل تفاعلية تعكس طابع الوكالات التقنية الحديثة، مع تنظيم الأقسام لعرض الخدمات الاحترافية وسهولة تواصل العميل.</p>
-            <span class="tech-tag">Digital Agency UI / Modern CSS</span>
-        </div>
-
-        <div id="project-4" class="case-study-card">
-            <h3><span>04</span> متجر الجلود والمصنوعات الطبيعية</h3>
-            <p><strong>فكرة المشروع:</strong> متجر تجارة إلكترونية مصمم لعرض المحافظ والأحزمة والمنتجات الجلدية المصنوعة يدوياً.</p>
-            <p><strong>ما تم تنفيذه:</strong> دمج صور ماكرو دقيقة توضح تفاصيل الحياكة اليدوية الدقيقة (Saddle Stitch)، مع تصميم بطاقات عرض منتجات احترافية ومباشرة.</p>
-            <span class="tech-tag">E-Commerce UI / Macro Visuals</span>
-        </div>
-
-        <div id="project-5" class="case-study-card">
-            <h3><span>05</span> معرض أعمال المصممين والمطورين</h3>
-            <p><strong>فكرة المشروع:</strong> منصة شخصية لعرض المشاريع البرمجية والتصميمية الفنية للمطورين والمبدعين.</p>
-            <p><strong>ما تم تنفيذه:</strong> بناء تصميم شبكي متجاوب (Responsive Grid) يضمن ظهور المشاريع بوضوح تام على مختلف الشاشات (حواسيب، أجهزة لوحية، وهواتف).</p>
-            <span class="tech-tag">Responsive Design / Portfolio Grid</span>
-        </div>
-
-        <div id="project-6" class="case-study-card">
-            <h3><span>06</span> معرض الفنون التشكيلية واللوحات</h3>
-            <p><strong>فكرة المشروع:</strong> موقع فني مظلم وهادئ مخصص لعرض اللوحات الفنية والرسومات الرقمية والتكيلية.</p>
-            <p><strong>ما تم تنفيذه:</strong> استخدام خلفيات داكنة عميقة (Obsidian/Dark Mode) لكي تبرز الألوان واللوحات الفنية بشكل ساطع وجذاب يخطف انتباه الزائر فور دخول الموقع.</p>
-            <span class="tech-tag">Dark Mode Aesthetics / Art Gallery</span>
-        </div>
-
-    </section>
-
-    <!-- صندوق التسعير -->
     <section id="pricing" class="pricing-section">
         <div class="pricing-box">
             <h2>صندوق التسعير وبدء العمل</h2>
@@ -480,7 +370,6 @@
         </div>
     </section>
 
-    <!-- التذييل -->
     <footer>
         <p>&copy; 2026 PixelForge Studio. جميع الحقوق محفوظة.</p>
     </footer>
