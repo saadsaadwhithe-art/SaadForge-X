@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تفاصيل المشروع - PixelForge Studio</title>
+    <title>تفاصيل المشروع - SaadForge X</title>
 
     <!-- وسوم الميتا لتحسين محركات البحث (SEO) -->
-    <meta name="description" content="استعرض تفاصيل المشروع التقني والتصميمي من وكالة PixelForge Studio للتطوير الرقمي.">
-    <meta name="keywords" content="معرض الأعمال, تفاصيل المشروع, تصميم مواقع, PixelForge Studio">
+    <meta name="description" content="استعرض تفاصيل المشروع التقني والتصميمي من وكالة SaadForge X للتطوير الرقمي.">
+    <meta name="keywords" content="معرض الأعمال, تفاصيل المشروع, تصميم مواقع, SaadForge X">
 
-    <!-- وسوم المشاركة على منصات التواصل (واتساب، فيسبوك، إلخ) -->
-    <meta property="og:title" content="تفاصيل المشروع - PixelForge Studio">
-    <meta property="og:description" content="استعرض تفاصيل المشروع التقني والتصميمي من وكالة PixelForge Studio.">
+    <!-- وسوم المشاركة على منصات التواصل -->
+    <meta property="og:title" content="تفاصيل المشروع - SaadForge X">
+    <meta property="og:description" content="استعرض تفاصيل المشروع التقني والتصميمي من وكالة SaadForge X.">
     <meta property="og:type" content="website">
 
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
@@ -142,7 +142,7 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">PixelForge Studio</a>
+        <a href="index.html" class="logo">SaadForge X</a>
         <a href="index.html" class="back-btn">&#8592; العودة للرئيسية</a>
     </header>
 
@@ -159,11 +159,10 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 PixelForge Studio. جميع الحقوق محفوظة.</p>
+        <p>&copy; 2026 SaadForge X. جميع الحقوق محفوظة.</p>
     </footer>
 
     <script>
-        // قاعدة بيانات المشاريع لتغيير الصورة والشروحات حسب ID القادم من الرابط
         const projectsData = {
             "1": {
                 title: "متجر PetalVibe للمجوهرات الحرفية",
@@ -203,7 +202,6 @@
             }
         };
 
-        // قراءة رقم المشروع من الرابط (مثال: project.html?id=1)
         const urlParams = new URLSearchParams(window.location.search);
         const projectId = urlParams.get('id');
 
@@ -213,7 +211,7 @@
             document.getElementById('project-img').src = project.img;
             document.getElementById('project-desc').innerHTML = project.desc;
             document.getElementById('project-tag').innerText = project.tag;
-            document.title = project.title + " - PixelForge Studio";
+            document.title = project.title + " - SaadForge X";
         } else {
             document.getElementById('project-title').innerText = "المشروع غير موجود";
             document.getElementById('project-desc').innerHTML = "<p>عذراً، لم يتم العثور على المشروع المطلوب.</p>";
